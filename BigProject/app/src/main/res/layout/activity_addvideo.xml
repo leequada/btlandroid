@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#111111"
+    tools:context=".AddvideoActivity">
+    <VideoView
+        android:id="@+id/videoV"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+    <EditText
+        android:maxLines="3"
+        android:layout_below="@+id/videoV"
+        android:hint="Tiltle Video"
+        android:padding="10dp"
+        android:id="@+id/titleVideos"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <EditText
+        android:layout_below="@+id/titleVideos"
+        android:hint="Tag Video"
+        android:padding="10dp"
+        android:id="@+id/tagvideo"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customebutton"
+        android:textColorHint="#111111"
+        android:hint="Add"
+        android:id="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tagvideo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_action_library"
+        android:layout_margin="5dp"
+        android:id="@+id/chooseVideo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

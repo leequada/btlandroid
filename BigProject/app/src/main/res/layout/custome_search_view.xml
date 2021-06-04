@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165dp"
+    android:layout_height="285dp"
+    android:paddingBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <VideoView
+        android:id="@+id/vidSearch"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"/>
+    <TextView
+        android:textColor="#fff"
+        android:textSize="10dp"
+        android:paddingLeft="4dp"
+        android:text="My video"
+        android:layout_above="@id/nameUserSearch"
+        android:id="@+id/titleVid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="#fff"
+        android:textSize="10dp"
+        android:paddingLeft="4dp"
+        android:text="My video"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/nameUserSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:textColor="#fff"
+        android:id="@+id/loveic"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/ic_action_love"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="16dp"
+        android:layout_height="16dp"/>
+    <TextView
+        android:textColor="#fff"
+        android:layout_marginBottom="9dp"
+        android:textSize="8dp"
+        android:id="@+id/likeSearch"
+        android:text="12k"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".ListVideoFromSearch">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:background="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/SearchContent"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:paddingLeft="10dp"
+            android:background="@drawable/custome_edittext"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:textColorHint="#000"
+            android:hint="Search"
+            android:background="@drawable/custome_edittext"
+            android:layout_width="62dp"
+            android:layout_height="28dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/toolbars"
+        android:id="@+id/recycSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

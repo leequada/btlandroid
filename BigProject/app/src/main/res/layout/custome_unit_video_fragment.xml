@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="126dp"
+    android:layout_height="160dp"
+    android:layout_marginBottom="4dp"
+
+    >
+    <VideoView
+        android:layout_centerInParent="true"
+        android:id="@+id/videoView"
+        android:layout_width="126dp"
+        android:layout_height="160dp"/>
+    <ImageView
+        android:id="@+id/iconLove"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_action_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/likesnumber"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/iconLove"
+        android:text="1,2k"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>

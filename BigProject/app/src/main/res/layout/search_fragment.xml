@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_margin="15dp"
+        android:id="@+id/txtsearch"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:padding="8dp"
+        android:hint="Search"
+        android:background="@drawable/custome_signin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnS"
+            android:textColorHint="#333333"
+            android:hint="Search"
+            android:layout_margin="15dp"
+            android:background="@drawable/custome_signin"
+            android:layout_toRightOf="@id/txtsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"/>
+    <fragment
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtsearch"
+        android:name="com.example.bigproject.Fragment.Banner_fragment"
+        android:id="@+id/bannerfragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></fragment>
+    <fragment
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/bannerfragment"
+        android:id="@+id/topvideofragment"
+        android:name = "com.example.bigproject.Fragment.Topvideo_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></fragment>
+
+    </RelativeLayout>
+</RelativeLayout>
